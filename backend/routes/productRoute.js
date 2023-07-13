@@ -12,3 +12,5 @@ router.route("/products/new").post(createProduct);
 router.route("/product/:id").put(updateProducts);
 
 module.exports = router
+
+
