@@ -16,7 +16,7 @@ app.use("/api/v1",product);
 app.use("/api/v1",user);
 app.use("/api/v1",order);
 
-//Middleware for errors
+//Middleware for any errors
 app.use(errorMiddleware);
 
 module.exports = app;
