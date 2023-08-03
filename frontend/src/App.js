@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import React from 'react';
 import WebFont from 'webfontloader';
 import Footer from "./component/layout/Footer/Footer.js"
-import Home from "./component/Home/Home.js"
+// import Home from "./component/Home/Home.js"
 
 function App() {
 React.useEffect(() => {

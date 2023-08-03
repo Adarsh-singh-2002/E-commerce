@@ -17,7 +17,7 @@ const Footer = () => {
         <h1>E-COMMERCE.</h1>
         <p>High Quality and most affordable is what you need ? Don't worry we cover you.</p>
 
-        <p>Copyrights 2021 &copy; ADARSH </p>
+        <p>Copyrights 2023 &copy; ADARSH </p>
       </div>
 
       <div className="rightFooter">
