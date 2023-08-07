@@ -62,6 +62,7 @@ font: 300 1.4vmax "Lucida Sans";
     display: flex;
     margin: 2vmax auto;
     width: 80vw;
+    font-size:12px;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
