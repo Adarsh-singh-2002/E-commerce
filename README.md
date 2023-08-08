@@ -1,6 +1,6 @@
 # E-commerce
 
-![Alt text](frontend/src/images/ecom.webp)
+![new0](frontend/src/images/ecom.webp)
 
 
 A full fledged e commerce website
@@ -12,5 +12,6 @@ npm i webfontloader --force
 
 npm i react-rating-stars-component --force
 
-![Alt text](frontend/src/images/why-ecommerce-is-important-with-business.png)
+![new1](frontend/src/images/why-ecommerce-is-important-with-business.png)
 
+![new2](frontend/src/images/ecom_image.webp)
