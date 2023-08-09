@@ -14,8 +14,11 @@ E- commerce website for any retailer
 npm i webfontloader --force
 
 npm i react-rating-stars-component --force
-![OGC](https://github.com/Adarsh-singh-2002/E-commerce/assets/98600091/27bf9876-8a06-4349-83cf-25251b8e2911)
 
-![why-ecommerce-is-important-with-business](https://github.com/Adarsh-singh-2002/E-commerce/assets/98600091/8baa0537-9ae0-4199-a3c2-c1fa38cbb83a)
+
 
 ![OGC](https://github.com/Adarsh-singh-2002/E-commerce/assets/98600091/49578a33-b8e5-4ed1-8835-6afa26e44424)
+
+
+![OGC](https://github.com/Adarsh-singh-2002/E-commerce/assets/98600091/27bf9876-8a06-4349-83cf-25251b8e2911)
+
