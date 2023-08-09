@@ -21,7 +21,7 @@ const Product = ({product}) =>{
             <div>
                 <ReactStars {...options} /> <span>({product.numOfReviews} Reviews)</span>
             </div>
-            <span>{`${product.price}`}</span> 
+            <span>{`Rs. ${product.price}`}</span> 
 
 
 
