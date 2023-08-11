@@ -9,6 +9,8 @@ E- commerce website for any retailer
 
 ![ecom_image](https://github.com/Adarsh-singh-2002/E-commerce/assets/98600091/5fb44094-31a5-4048-b3b9-0abcd9152e6f)
 
+<--Commands-->
+
 npm i webfontloader --force
 
 npm i react-rating-stars-component --force
