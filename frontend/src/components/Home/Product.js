@@ -15,11 +15,11 @@ const Product = ({product}) =>{
         isHalf:true,
       };
     return (
-        <Link className="productCard" to={Product._id}>
+        <Link className="productCard" to={`/product/${Product._id}`}>
             <img src={product.images[0].url} alt={product.name} />
             <p>{product.name}</p>
             <div>
-                <ReactStars {...options} /> <span>({product.numOfReviews} Reviews)</span>
+                <ReactStars {...options} />{" "} <span>({product.numOfReviews} Reviews)</span>
             </div>
             <span>{`Rs. ${product.price}`}</span> 
 

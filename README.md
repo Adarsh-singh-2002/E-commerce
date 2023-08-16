@@ -17,7 +17,14 @@ npm i webfontloader --force
 
 npm i react-rating-stars-component --force
 
+npm i react-material-ui-carousel
 
+    npm install @mui/material
+
+    npm install @mui/icons-material
+
+    npm install @mui/styles
+    
 
 ![OGC](https://github.com/Adarsh-singh-2002/E-commerce/assets/98600091/49578a33-b8e5-4ed1-8835-6afa26e44424)
 
