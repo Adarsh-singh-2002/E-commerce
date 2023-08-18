@@ -4,7 +4,8 @@ import "./ProductDetails.css";
 import {useSelector,useDispatch} from "react-redux";
 import { getProductDeatails } from '../../actions/productAction';
 import ReactStars from "react-rating-stars-component";
-import ReviewCard from "./ReviewCard.js"
+import ReviewCard from "./ReviewCard.js";
+import Loader from "../layout/Loader/Loader";
 
 const ProductDetails = ({match}) => {
 
@@ -29,7 +30,9 @@ const ProductDetails = ({match}) => {
 
 
     return(
-        <Fragment>
+       <Fragment>
+        {loading ? <Loader/> : (
+            <Fragment>
             <div className='ProductDetails'>
                 <div>
                     <Carousel>
@@ -83,7 +86,9 @@ const ProductDetails = ({match}) => {
                 </div>
             ): (<p className='noReviews'>No Reviews Yet</p>)}
         </Fragment>
-       
+        ) }
+
+       </Fragment>
     );
 };
 
