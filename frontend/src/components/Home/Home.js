@@ -10,7 +10,7 @@ import Loader from "../layout/Loader/Loader";
 
 const Home = () => {
     const dispatch = useDispatch();
-    const {loading, products, productsCount } = useSelector(state=>state.products);
+    const {loading, products} = useSelector(state=>state.products);
 
     useEffect(() => {
         dispatch(getProduct());
@@ -20,6 +20,7 @@ const Home = () => {
         <Fragment>
             {loading?(<Loader/>) : (
                 <Fragment>
+                    <MetaData title="PRODUCTS -- ECOMMERCE" />
                 <MetaData title = "E-Commerce"/>
                 <div className="banner">
                     <p>Welcome to Ecommerce</p>

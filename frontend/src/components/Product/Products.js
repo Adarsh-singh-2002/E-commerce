@@ -8,12 +8,29 @@ import ProductCard from "../Home/ProductCard";
 import { Pagination } from "@mui/material";
 import Slider from "@mui/material";
 import Typography from "@mui/material";
+import MetaData from "../layout/MetaData";
+
+
+
+const categories = [
+    "Laptop",
+    "Footwear",
+    "Bottom",
+    "Tops",
+    "Attire",
+    "Camera",
+    "SmartPhones",
+  ];
+
+
 const Products = ({match}) => {
 
     const dispatch = useDispatch();
 
     const [currentPage,setCurrentPage] = useState(1);
     const [price,setPrice] = useState([0,25000]);
+    const [category,setCategory] = useState("");
+    const [ratings, setRatings] = useState(0);
 
 
     const {products,loading,productsCount,resultPerPage,filteredProductCount,} = useSelector((state) => state.products);
@@ -29,8 +46,8 @@ const Products = ({match}) => {
     };
 
     useEffect(() => {
-        dispatch(getProduct(keyword,currentPage,price));
-    },[dispatch,keyword,currentPage,price]);
+        dispatch(getProduct(keyword,currentPage,price,category,ratings));
+    },[dispatch,keyword,currentPage,price,category,ratings]);
 
     let count = filteredProductCount;
 
@@ -39,6 +56,7 @@ const Products = ({match}) => {
     return (<Fragment>
         {loading?<Loader/>:
         (<Fragment>
+            <MetaData title="PRODUCTS -- ECOMMERCE" />
             <h2 className="productHeading">Products</h2>
 
             <div className="products">
@@ -58,7 +76,39 @@ const Products = ({match}) => {
                     max ={25000}
                     />
                 </Typography>
+                <Typography>
+                    Categories
+                </Typography>
+                <ul className="categoryBox">
+                    {categories.map((category)=>(
+                        <li
+                        className="category-link"
+                        key = {category}
+                        onClick={() => setCategory(category)}
+                        >
+                            {category}
+
+                        </li>
+                    ))}
+
+                </ul>
+
+                <fieldset>
+                    <Typography component="legend">Ratings Above</Typography>
+                    <Slider value={ratings}
+                    onChange={(e,newRating) =>{
+                        setRatings(newRating);
+                    }}
+                    aria-labelledby = "continuous-slider"
+                    min={0}
+                    max={5}
+                    valueLabelDisplay = "auto"
+                    />
+                </fieldset>
+
             </div>
+
+
 
 
 
